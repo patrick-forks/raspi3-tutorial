@@ -55,8 +55,8 @@ void main()
         }
     }
 
-    // echo everything back
-    while(1) {
-        uart_send(uart_getc());
-    }
+//    // echo everything back
+//    while(1) {
+//        uart_send(uart_getc());
+//    }
 }
