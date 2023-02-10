@@ -38,7 +38,7 @@ void main()
     // use the last 4 bytes on the second sector as a boot counter
     unsigned int *counter = (unsigned int*)(&_end + 508);
     // set up serial console
-    uart_init();
+//    uart_init();
 
     // initialize EMMC and detect SD card type
     if(sd_init()==SD_OK) {

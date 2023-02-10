@@ -28,8 +28,10 @@
 #include "delays.h"
 
 /* PL011 UART registers */
-#define UART0_DR        ((volatile unsigned int*)(MMIO_BASE+0x00201000))
-#define UART0_FR        ((volatile unsigned int*)(MMIO_BASE+0x00201018))
+//#define UART0_DR        ((volatile unsigned int*)(MMIO_BASE+0x00201000))
+//#define UART0_FR        ((volatile unsigned int*)(MMIO_BASE+0x00201018))
+#define UART0_DR        ((volatile unsigned int*)(0x3f215040))
+#define UART0_FR        ((volatile unsigned int*)(0x3f215064))
 #define UART0_IBRD      ((volatile unsigned int*)(MMIO_BASE+0x00201024))
 #define UART0_FBRD      ((volatile unsigned int*)(MMIO_BASE+0x00201028))
 #define UART0_LCRH      ((volatile unsigned int*)(MMIO_BASE+0x0020102C))
